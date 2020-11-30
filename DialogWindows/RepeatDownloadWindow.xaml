@@ -1,0 +1,18 @@
+﻿<Window x:Class="Laba2.DialogWindows.RepeatDownloadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba2.DialogWindows"
+        mc:Ignorable="d"
+        Title="Ошибка при загрузке" Height="150" Width="300" WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Да" Margin="10,66,0,10" Name="YesButton" Click="YesButton_Click" IsDefault="True" HorizontalAlignment="Left" Width="130"/>
+        <Button Content="Нет" Margin="157,66,7,10" Name="NoButton" IsCancel="True"/>        
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Нет соединения с Интернетом или открыт файл thrlist.xlsx. Попробовать снова?" VerticalAlignment="Top" Height="50" Width="274"/>
+
+    </Grid>
+</Window>
